@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fila</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <nav class="#">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="material-icons">home</i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="lista.html">Lista</a>
+            </li>
+            <li>
+                <a href="pilha.html">Pilha</a>
+            </li>
+            <li>
+                <a href="fila.html">Fila</a>
+            </li>
+            <li>
+                <a href="arvore.html">Árvore</a>
+            </li>
+            <li>
+                <a href="grupo.html">
+                    <i class="material-icons">supervisor_account</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="container">
+
+        <h1> Estrutura de dados | Fila </h1>
+
+    </header>
+    <div class="container">
+        <div class="row">
+
+
+            <main>
+                <article>
+                    <p>Sabemos da importância da estrutura de dados para a construção do código. Mas afinal, o que é fila? </p>
+                    <h2>Conceito</h2>
+                    <p> A Fila (função SplQueue) tem o princípio FIFO (first in, first out), ou seja, os elementos que são inseridos primeiro, serão os primeiros a serem removidos.</p>
+
+                    <h2>Exemplo</h2>
+
+                    <p>Adicionando na fila de ingredientes: </p>
+                    <pre>
+                    <code>
+                    &lt;?php $ingredientes=new splQueue(); $ingredientes -> enqueue ('Cenoura');
+                            $ingredientes -> enqueue ('Batata');
+                            $ingredientes -> enqueue ('Pimentão');?>
+                            </code>
+        </pre>
+
+                    <p>Removendo da fila de ingredientes </p>
+                    <pre>
+                    <code>
+                    &lt;?php echo $ingredientes->dequeue(); // Remove Cenoura
+                            echo $ingredientes->dequeue(); // Remove Batata
+                            ?>
+                            </code>
+        </pre>
+                    <p>Verificar se a fila está vazia</p>
+                    <pre>
+                    <code>
+                    &lt;?php $ingredientes = SplQueue();
+                    echo $ingredientes-> isEmpty();
+                    </code>
+        </pre>
+
+                </article>
+            </main>
+
+        </div>
+    </div>
+    <footer>
+    <small>&copy;2021.Todos os direitos reservados</small>
+
+    </footer>
+
+
+</body>
+
+</html>

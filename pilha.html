@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Pilha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<nav class="#">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="material-icons">home</i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="lista.html">Lista</a>
+            </li>
+            <li>
+                <a href="pilha.html">Pilha</a>
+            </li>
+            <li>
+                <a href="fila.html">Fila</a>
+            </li>
+            <li>
+                <a href="arvore.html">Árvore</a>
+            </li>
+            <li>
+                <a href="grupo.html">
+                    <i class="material-icons">supervisor_account</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+  <header class="container">
+
+    <h1> Estrutura de dados | Pilha </h1>
+
+  </header>
+
+
+  <div class="container">
+    <div class="row">
+      <article>
+        <h2>Conceito</h2>
+        <p>Uma pilha é uma estrutura dados que serve como uma coleção de elementos, que nos permite acesso de somente um item armazenado.</p>
+        <p>O acesso aos itens de uma pilha é restrito - somente um item pode ser lido ou removido por vez.</p>
+        <p>Existem dois tipos de pilhas as LIFO ou UEPS e as FIFO ou PEPS.</p>
+        <p>A estrutura LIFO (Last In First Out), ou UEPS (Último que Entra Primeiro que Sai), apresenta o seguinte critério: o primeiro elemento a ser retirado é o último que tiver sido inserido.</p>
+        <p>A estrutura FIFO (First In First Out) ou PEPS (Primeiro que Entra Primeiro que Sai), apresenta o seguinte critério: o primeiro elemento a ser retirado é o primeiro que tiver inserido./p>
+
+        <h2>Exemplos</h2>
+        <section>
+          <p>Podemos imagina uma Pilha como um conjunto de itens um em cima do outro formando uma “pilha” de itens. Usamos a SplStack para trabalhar com essa estrutura, uma Pilha possui duas operações básicas, "push" para empilhar um item e "pop" para desempilhar um item.</p>
+          <pre>
+                          <code>
+                            &lt;?php
+                            $stack = SplStack();
+                            $stack->push("prato 1");
+                            $stack->push("prato 2");
+                            $stack->push("prato 3");
+                            $stack->push("prato 4");
+                            ?
+                          </code>
+                      </pre>
+        </section>
+
+        <section>
+          <p>Visualmente a estrutura do exemplo fica da seguinte forma:</p>
+          <pre>
+                          <code>
+                            "prato 4"
+                            "prato 3"
+                            "prato 2"
+                            "prato 1"
+                          </code>
+                      </pre>
+        </section>
+
+        <section>
+          <p>Quando removemos um item de uma Pilha, é removido o item que está no topo da estrutura.</p>
+          <pre>
+                          <code>
+                            &lt;?php
+                            echo $stack->pop(); // Remove "prato 4"
+                            echo $stack->pop(); // Remove "prato 3"
+                            ?
+                          </code>
+                      </pre>
+        </section>
+
+        <section>
+          <p>O comportamento normal de uma Pilha, quando inserirmos mais itens na Pilha, é sempre inserido um item sempre no topo da Pilha.</p>
+          <p>No código e visualmente fica:</p>
+          <pre>
+                          <code>
+                            &lt;?php
+                            $stack->push("prato 6");
+                            $stack->push("prato 7");
+                            ?
+                          </code>
+                          <code>
+                            "prato 7"
+                            "prato 6"
+                            "prato 2"
+                            "prato 1"
+                          </code>
+                      </pre>
+        </section>
+
+        <section>
+          <p>A Pilha também possui a operação para verificar se existe está vazia.</p>
+          <pre>
+                          <code>
+                            &lt;?php
+                            $stack = SplStack();
+                            echo $stack->isEmpty(); // true
+                            ?
+                          </code>
+                      </pre>
+        </section>
+
+
+      </article>
+    </div>
+  </div>
+
+  <footer>
+    <small>&copy;2021.Todos os direitos reservados</small>
+
+    </footer>
+</body>
+
+</html>

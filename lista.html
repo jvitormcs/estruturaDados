@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <nav class="#">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="material-icons">home</i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="lista.html">Lista</a>
+            </li>
+            <li>
+                <a href="pilha.html">Pilha</a>
+            </li>
+            <li>
+                <a href="fila.html">Fila</a>
+            </li>
+            <li>
+                <a href="arvore.html">Árvore</a>
+            </li>
+            <li>
+                <a href="grupo.html">
+                    <i class="material-icons">supervisor_account</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="container">
+
+        <h1> Estrutura de dados | Lista </h1>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <main>
+                <article>
+                    <p>Sabemos da importância da estrutura de dados para a construção do código. Mas afinal, o que é lista? </p>
+                    <h2>Conceito</h2>
+
+                    <section>
+                        <ul>
+                            <li>A estrutura de dados do tipo lista, armazena os dados de um determinado tipo em uma ordem específica</li>
+                            <li>A diferença entre lista e arrays é que a lista possui um tamanho ajustável, enquanto arrays possui um valor fixo</li>
+                            <li>Existem dois tipos de lista sendo elas as ligadas e as duplamente ligadas</li>
+                            <li>Na estrutura do tipo lista ligada existem os nós onde cada um dos nós conhece o valor que está sendo armazenado em seu interior, além de conhecer o valor posterior a ele: por isso ela é chamada de “lista ligada”, pois os nós são amarrados com essa indicação de qual é o próximo nó</li>
+                            <li>A lista duplamente ligada é uma variação da lista ligada</li>
+                            <li>A diferença da lista duplamente ligada e a lista ligada é que a lista duplamente ligada são bidirecionais. Vimos que, naturalmente, não conseguimos “andar para trás” em listas ligadas, já que, os nós das listas ligadas somente sabem quem é o próximo elemento. Já nas listas duplamente ligadas os nós conhecem o próximo elemento, como também sabem qual é seu elemento anterior, o que nos permite a navegação reversa</li>
+                        </ul>
+                    </section>
+
+                    <h2>Exemplo</h2>
+                    <section>
+
+                        A <code>SplDoublyLinkedList</code> é a lista duplamente ligada, como vimos, são bidirecionais. A operação <code>unshift</code> insere no início da lista:
+                        <pre>
+            <code>
+              &lt;?php $lista = new SplDoublyLinkedList();
+              $lista->unshift("Beatriz");
+              $lista->unshift("Paulo");
+              $lista->unshift("Roberto");
+              </code>
+        </pre>
+
+                    </section>
+
+
+                    <section>
+                        A <code>push</code> insere no final da lista. Para exemplificar, vamos usar a lista criada anteriormente de nomes e adicionar mais uma pessoa ao final dela:
+                        <pre>
+            <code>
+              &lt;?php $lista->push("Laura");
+              </code>
+        </pre>
+
+                    </section>
+
+
+
+                    <section>
+
+                        O <code>shift</code> por sua vez, remove um item do início da lista:
+                        <pre>
+                        <code>
+                            &lt;?php $lista→shift(); // Removeu Beatriz
+
+                        </code>
+                        </pre>
+
+                    </section>
+
+
+                    <section>
+
+                        O <code>pop</code> por sua vez, remove um item do final da lista:
+                        <pre>
+            <code>
+              &lt;?php $lista→pop(); // Removeu Laura
+            
+              </code>
+        </pre>
+
+                    </section>
+                </article>
+            </main>
+
+        </div>
+    </div>
+
+    <footer>
+    <small>&copy;2021.Todos os direitos reservados</small>
+
+    </footer>
+
+</body>
+
+</html>
